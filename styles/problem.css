@@ -10,6 +10,19 @@
 	margin-left: 10px;
 }
 
+#tagline a {
+	color: #9b4dca;
+}
+#tagline a:visited {
+	color: #9b4dca;
+}
+#tagline a:hover {
+	color: #9b4dca;
+}
+#tagline a:active {
+	color: #9b4dca;
+}
+
 @media print {    
     .no-print, .no-print * {
         display: none !important;
