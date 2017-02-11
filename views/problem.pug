@@ -21,7 +21,7 @@ html
                   li
                     a(href='/problems/' + problem)= menu.Case.title(problem)
       if explanation
-        div(class='column column-75')
+        div(class='column')
           div!= explanation
       else
         div!= landing
