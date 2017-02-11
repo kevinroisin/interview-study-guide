@@ -9,7 +9,8 @@ html
       include ../styles/problem.css
   body
     div(class='row')
-      div(class='column' id='tagline') // Interview Study Guide
+      div(class='column' id='tagline')
+        a(href='/') // Interview Study Guide
     div(class='row')
       div(class='column column-25 no-print' id='menu')
         ul
@@ -23,4 +24,4 @@ html
         div(class='column column-75')
           div!= explanation
       else
-        h1 The ultimate study guide for technical interviews. It's just not very ultimate yet.
+        div!= landing

@@ -11,7 +11,7 @@ app.use('/static', express.static('problems'));
 app.set('view engine', 'pug');
 
 marked.setOptions({
-  highlight: function (code) {
+  highlight: (code) => {
     return highlightjs.highlight('java', code.toString()).value;
     // return require('highlight.js').highlightAuto(code).value;
   }
@@ -20,11 +20,12 @@ marked.setOptions({
 let menu = require('./problems');
 menu.Case = Case;
 
-app.get('/', function (req, res) {
-  res.render('problem', { title: 'Interview Study Guide', menu: menu });
+app.get('/', async (req, res) => {
+  let landing = marked(await readFile(path.join(__dirname, 'index.md')));
+  res.render('problem', { title: 'Interview Study Guide', menu: menu, landing: landing });
 });
 
-app.get('/problems/:problem', async function (req, res) {
+app.get('/problems/:problem', async (req, res) => {
   const PROBLEM = req.params.problem;
   const BASE_PATH = path.join(__dirname, 'problems/', PROBLEM);
 
@@ -33,12 +34,12 @@ app.get('/problems/:problem', async function (req, res) {
 
     res.render('problem', { title: Case.title(PROBLEM),  menu: menu, explanation: explanation });
   } catch(err) {
-    res.render('problem', { title: 'Interview Study Guide', menu: menu });
+    res.redirect('/');
   }
 
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Started app on port: ' + (process.env.PORT || 3000));
 });
 
