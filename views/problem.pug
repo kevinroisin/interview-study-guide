@@ -1,0 +1,26 @@
+html
+  head
+    title= title
+    link(href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic', rel='stylesheet')
+    link(href='//cdn.rawgit.com/necolas/normalize.css/master/normalize.css', rel='stylesheet')
+    link(href='//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css', rel='stylesheet')
+    style
+      include ../node_modules/highlight.js/styles/atom-one-dark.css
+      include ../styles/problem.css
+  body
+    div(class='row')
+      div(class='column' id='tagline') // Interview Study Guide
+    div(class='row')
+      div(class='column column-25 no-print' id='menu')
+        ul
+          each category in menu
+            li= category.name
+              ul
+                each problem in category.problems
+                  li
+                    a(href='/problems/' + problem.path)= problem.name
+      if explanation
+        div(class='column column-75')
+          div!= explanation
+      else
+        h1 Intro Page!

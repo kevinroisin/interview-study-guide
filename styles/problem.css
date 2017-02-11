@@ -1,0 +1,21 @@
+#menu {
+	border-right: 3px solid #f4f5f6;
+	height: 100%;
+	margin-left: 20px;
+}
+
+#tagline {
+	background-color: #f4f5f6;
+	font-size: 4rem;
+	margin-left: 10px;
+}
+
+@media print {    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+    
+    #tagline {
+    	margin-left: 0px;
+    }
+}
