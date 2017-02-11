@@ -4,6 +4,7 @@ let marked = require('marked');
 let Bluebird = require('bluebird');
 let path = require('path');
 let fs = Bluebird.promisifyAll(require("fs"));
+let Case = require('case');
 
 let app = express();
 app.use('/static', express.static('problems'));
@@ -17,6 +18,7 @@ marked.setOptions({
 });
 
 let menu = require('./problems');
+menu.Case = Case;
 
 app.get('/', function (req, res) {
   res.render('problem', { title: 'Interview Study Guide', menu: menu });
@@ -28,17 +30,16 @@ app.get('/problems/:problem', async function (req, res) {
 
   try {
     let explanation = marked(await readFile(path.join(BASE_PATH, 'E.md')));
-    let config = require(BASE_PATH);
 
-    res.render('problem', { title: config.name,  menu: menu, explanation: explanation });
+    res.render('problem', { title: Case.title(PROBLEM),  menu: menu, explanation: explanation });
   } catch(err) {
     res.render('problem', { title: 'Interview Study Guide', menu: menu });
   }
 
 });
 
-app.listen(process.env.PORT, function () {
-  console.log('Started app on port' + process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Started app on port: ' + (process.env.PORT || 3000));
 });
 
 

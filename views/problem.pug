@@ -18,7 +18,7 @@ html
               ul
                 each problem in category.problems
                   li
-                    a(href='/problems/' + problem.path)= problem.name
+                    a(href='/problems/' + problem)= menu.Case.title(problem)
       if explanation
         div(class='column column-75')
           div!= explanation
