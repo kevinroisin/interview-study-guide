@@ -8,4 +8,9 @@ module.exports = [{
   problems: [
     'reverse-linked-list'
   ]
+}, {
+  name: 'Trees',
+  problems: [
+    'bst-kth-smallest'
+  ]
 }];
