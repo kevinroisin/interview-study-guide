@@ -1,9 +1,15 @@
 module.exports = [{
+  name: 'General',
+  problems: [
+    'convert-to-binary'
+  ]
+}, {
   name: 'Arrays',
   problems: [
     '2-sum',
     'find-mode',
-    'determine-if-rotated'
+    'determine-if-rotated',
+    'find-x-prime-numbers'
   ]
 }, {
   name: 'Linked Lists',
