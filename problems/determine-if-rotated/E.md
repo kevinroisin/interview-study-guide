@@ -6,13 +6,13 @@ Example: Original Array `a = {1,2,3,4,5,6,7,8}`, Rotated Array `b = {4,5,6,7,8,1
 
 ### Solution
 ```java
-public boolean isRotated(int[] a, int[] b) {
+public static boolean isRotated(int[] a, int[] b) {
     if (a.length != b.length)
         return false;
 
     // find the rotation position with binary search
     int left = 0;
-    int right = b.length;
+    int right = b.length - 1;
     while (b[left] > b[right]) {
         int mid = left + (left+right) / 2;
 
@@ -21,19 +21,19 @@ public boolean isRotated(int[] a, int[] b) {
         else
             right = mid;
     }
+    
+    // for clarity, we rename left (result of the above loop) to offset
+    // offset is where the shift occurrs in b
+    int offset = left;
 
-    // iterate the arrays and compare
-    // compare first portion of original array to end of rotated {1,2,3}
-    int i;
-    for (int i = 0;  i < left; i++) {
-        if (a[i] != b[left])
-            return false;
-        left++;
+    // compare first portion of original array to end of rotated
+    for(int bIter = left; bIter < b.length; bIter++) {
+        if(a[bIter-offset] != b[bIter]) return false;
     }
-    // compare the second portion {4,5,6,7,8}
-    for (int j = 0; j < a.length-left; j++) {
-        if (a[i] != b[j])
-            return false;
+    
+    // compare second portion of original array to start of rotated
+    for(int bIter = 0; bIter < offset; bIter++) {
+        if(b[bIter] != a[a.length-offset+bIter]) return false;
     }
 
     return true;
