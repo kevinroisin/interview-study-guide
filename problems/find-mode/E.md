@@ -21,20 +21,20 @@ public LinkedList<Integer> findMode(int[] arr) {
     }
 
     Integer maxCount = 0;
-    LinkedList<Integer> maxKey = new LinkedList<Integer>();
+    LinkedList<Integer> maxKeys = new LinkedList<Integer>();
     Set<Integer> keySet = hmap.keySet();
 
     for (Integer k : keySet) {
         Integer val = hmap.get(k);
         if (val == maxCount)
-            maxKey.add(k);
+            maxKeys.add(k);
         else if (val > maxCount) {
-            maxKey.clear();
-            maxKey.add(k);
+            maxKeys.clear();
+            maxKeys.add(k);
             maxCount = val;
         }
     }
     
-    return maxKey;
+    return maxKeys;
 }
 ```
