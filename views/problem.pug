@@ -30,9 +30,12 @@ html
               div!= landing
           div(class='row')
             div(class='column column-100')
-              each category in menu
-                p= category.name
-                  ul
+              form(action='/print', method='post')
+                each category in menu
+                  div= category.name
+                    br
                     each problem in category.problems
-                      li
-                        a(href='/problems/' + problem)= menu.Case.title(problem)    
+                      label(for=problem)
+                        input(type='checkbox', name= problem, checked)
+                        |  #{ problem }  
+                input(type='submit',value='Make My Study Guide!')

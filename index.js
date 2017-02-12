@@ -1,4 +1,5 @@
 let express = require('express');
+var bodyParser = require('body-parser')
 let highlightjs = require('highlight.js');
 let marked = require('marked');
 let Bluebird = require('bluebird');
@@ -7,6 +8,7 @@ let fs = Bluebird.promisifyAll(require("fs"));
 let Case = require('case');
 
 let app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/static', express.static('problems'));
 app.set('view engine', 'pug');
 
@@ -23,6 +25,10 @@ menu.Case = Case;
 app.get('/', async (req, res) => {
   let landing = marked(await readFile(path.join(__dirname, 'index.md')));
   res.render('problem', { title: 'Interview Study Guide', menu: menu, landing: landing });
+});
+
+app.post('/print', async (req, res) => {
+  res.json(req.body);
 });
 
 app.get('/problems/:problem', async (req, res) => {

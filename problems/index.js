@@ -1,7 +1,8 @@
 module.exports = [{
   name: 'Arrays',
   problems: [
-    '2-sum'
+    '2-sum',
+    'find-mode'
   ]
 }, {
   name: 'Linked Lists',
