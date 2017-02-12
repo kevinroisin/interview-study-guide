@@ -11,6 +11,7 @@ Example 2: Given the below array, your method should return `(5) -> (6)`.
 int[] arr = {1,2,2,3,4,5,5,5,6,6,6,7};
 ```
 
+
 ```java
 public LinkedList<Integer> findMode(int[] arr) {
     HashMap<Integer,Integer> hmap = new HashMap<Integer,Integer>();
