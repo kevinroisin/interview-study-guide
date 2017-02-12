@@ -13,6 +13,7 @@ module.exports = [{
   name: 'Trees',
   problems: [
     'bst-kth-smallest',
-    'level-order-traversal'
+    'level-order-traversal',
+    'convert-bst-to-dll'
   ]
 }];
