@@ -12,6 +12,6 @@ module.exports = [{
   name: 'Trees',
   problems: [
     'bst-kth-smallest',
-    'breadth-first-search'
+    'level-order-traversal'
   ]
 }];
