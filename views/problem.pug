@@ -37,5 +37,5 @@ html
                     each problem in category.problems
                       label(for=problem)
                         input(type='checkbox', name= problem, checked)
-                        |  #{ problem }  
+                        |  #{ menu.Case.title(problem) }  
                 input(type='submit',value='Make My Study Guide!')
