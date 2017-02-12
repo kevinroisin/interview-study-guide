@@ -2,7 +2,7 @@
 
 Write a method `Node kthSmallest(Node root, int k)` to return the Kth smallest element of a [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree).
 
-Example, given the below tree as `root`, and `k = 3`, your method should return `6`.
+Example: Given the below tree as `root`, and `k = 3`, your method should return `6`.
 ```
        10
       /  \
