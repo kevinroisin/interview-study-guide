@@ -2,6 +2,7 @@
 
 Print a tree by levels, otherwise known as [BFS](https://en.wikipedia.org/wiki/Breadth-first_search).
 
+### Solution
 ```java
 public void levelOrderTraverasl(Node n) {
     Queue<Node> queue = new LinkedList<Node>();
