@@ -27,7 +27,7 @@ public static boolean isRotated(int[] a, int[] b) {
     int offset = left;
 
     // compare first portion of original array to end of rotated
-    for(int bIter = left; bIter < b.length; bIter++) {
+    for(int bIter = offset; bIter < b.length; bIter++) {
         if(a[bIter-offset] != b[bIter]) return false;
     }
     
