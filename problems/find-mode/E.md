@@ -19,7 +19,8 @@ public LinkedList<Integer> findMode(int[] arr) {
     // Get counts for each int in arr
     for (int i : arr) {
         Integer count = map.get(i);
-        hmap.put(i, count != null ? count+1 : 1);   // if int exists in hmap, increment; otherwise add int with count of 1
+        hmap.put(i, count != null ? count+1 : 1);   // if int exists in hmap, increment
+                                                    // otherwise add int with count of 1
     }
     
     // Find the mode(s)
