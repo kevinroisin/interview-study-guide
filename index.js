@@ -36,7 +36,6 @@ app.get('/problems/:problem', async (req, res) => {
   } catch(err) {
     res.redirect('/');
   }
-
 });
 
 app.listen(process.env.PORT || 3000, () => {

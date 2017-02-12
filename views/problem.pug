@@ -24,4 +24,15 @@ html
         div(class='column')
           div!= explanation
       else
-        div!= landing
+        div(class='container' id='landing')
+          div(class='row')
+            div(class='column column-100')
+              div!= landing
+          div(class='row')
+            div(class='column column-100')
+              each category in menu
+                p= category.name
+                  ul
+                    each problem in category.problems
+                      li
+                        a(href='/problems/' + problem)= menu.Case.title(problem)    

@@ -23,6 +23,10 @@
 	color: #9b4dca;
 }
 
+#landing {
+	margin: 0;
+}
+
 @media print {    
     .no-print, .no-print * {
         display: none !important;

@@ -11,6 +11,7 @@ module.exports = [{
 }, {
   name: 'Trees',
   problems: [
-    'bst-kth-smallest'
+    'bst-kth-smallest',
+    'breadth-first-search'
   ]
 }];

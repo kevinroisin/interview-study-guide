@@ -1,8 +1,6 @@
 ## Level Order Traversal (Breadth First Search)
 
-Print a tree by levels.
-
-[Click for more info on BFS](https://en.wikipedia.org/wiki/Breadth-first_search)
+Print a tree by levels, otherwise known as [BFS](https://en.wikipedia.org/wiki/Breadth-first_search).
 
 ```java
 public void levelOrderTraverasl(Node n) {
