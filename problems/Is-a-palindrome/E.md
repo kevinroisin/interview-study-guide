@@ -1,4 +1,4 @@
-## Is a Palindrome
+## Is Linked List a Palindrome?
 
 Check if a singly linked list is a palindrome.
 
@@ -11,23 +11,16 @@ Example 3: Given `(a) -> (a) -> (c) -> (b) -> (a)`, then return `false`
 ### Solution
 ```java
 class Node {
-        int value;
-        Node next;
- 
-        Node(int data) {
-            value = data;
-            next = null;
-        }
-    }
- 
+    char value;
+    Node next;
+}
 ```
 
 ```java
-public boolean isPalindrome(Node node) {
-    boolean result = true;
+public static boolean isPalindrome(Node node) {
     Node slowPtr = node;
     Node fastPtr = node;
-    Stack<Node> firstHalf =  new LinkedList<Node>();
+    Stack<Node> firstHalf =  new Stack<Node>();
 
     // find middle of linked list
     while (slowPtr != null && fastPtr != null && fastPtr.next != null) {
@@ -38,15 +31,17 @@ public boolean isPalindrome(Node node) {
 
     // handle case for even sized list
     if (fastPtr != null) {
-        if (slowPtr != firstHalf.pop) {
-            result = false;
-        }
+        slowPtr = slowPtr.next;
     }
 
-    while (slowPtr.next != null && firstHalf.peek != null) {
-        if (slowPtr.next != firstHalf.pop) {
-            result = false;
+    // compare what's on the firstHalf stack to the rest of the list
+    while (slowPtr != null && !firstHalf.isEmpty()) {
+        if (slowPtr.value != firstHalf.pop().value) {
+            return false;
         }
+        slowPtr = slowPtr.next;
     }
+    
+    return true;
 }
 ```
