@@ -1,7 +1,7 @@
 module.exports = [{
   name: 'General',
   problems: [
-    'convert-to-binary'
+    'convert-integer-to-binary'
   ]
 }, {
   name: 'Arrays',
