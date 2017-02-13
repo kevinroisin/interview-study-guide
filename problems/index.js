@@ -22,6 +22,7 @@ module.exports = [{
   problems: [
     'bst-kth-smallest',
     'level-order-traversal',
-    'convert-bst-to-dll'
+    'convert-bst-to-dll',
+    'is-valid-bst'
   ]
 }];
