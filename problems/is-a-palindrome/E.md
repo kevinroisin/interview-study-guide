@@ -29,7 +29,7 @@ public static boolean isPalindrome(Node node) {
         fastPtr = fastPtr.next.next;
     }
 
-    // handle case for even sized list
+    // handle case for odd length list
     if (fastPtr != null) {
         slowPtr = slowPtr.next;
     }
