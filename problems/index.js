@@ -25,4 +25,10 @@ module.exports = [{
     'convert-bst-to-dll',
     'is-valid-bst'
   ]
+}, {
+  name: 'Sorting',
+  problems: [
+    'quicksort',
+    'mergesort'
+  ]
 }];
