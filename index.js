@@ -60,11 +60,6 @@ app.get('/problems/:problem', async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Started app on port: ' + (process.env.PORT || 3000));
-});
-
-
 async function readFile(path) {
   let file = await fs.readFileAsync(path, 'utf8');
   return file;
@@ -88,3 +83,7 @@ function loadFiles(problemPaths, callback) {
     callback(problems);
   });
 }
+
+app.listen(process.argv[2] || 3000, () => {
+  console.log('Started app on port: ' + (process.argv[2] || 3000));
+});

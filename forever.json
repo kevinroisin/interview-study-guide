@@ -1,0 +1,6 @@
+{
+  "script": "index.js",
+  "command": "node --harmony-async-await",
+  "sourceDir": "/root/interview-study-guide",
+  "args": [80]
+}
