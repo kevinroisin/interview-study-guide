@@ -27,10 +27,11 @@ module.exports = [{
 }, {
   name: 'Trees',
   problems: [
-    'bst-kth-smallest',
     'level-order-traversal',
-    'convert-bst-to-dll',
-    'is-valid-bst'
+    'bst-delete-node',
+    'bst-kth-smallest',
+    'bst-convert-to-dll',
+    'bst-determine-if-valid'
   ]
 }, {
   name: 'Sorting',

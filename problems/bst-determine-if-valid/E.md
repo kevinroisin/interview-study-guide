@@ -1,4 +1,4 @@
-## Is Valid BST
+## Detemine if a Binary Tree is a Valid Binary Search Tree
 
 Given a binary tree, determine if the tree is a valid [binary search tree (BST)](https://en.wikipedia.org/wiki/Binary_search_tree)
 
