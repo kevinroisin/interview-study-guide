@@ -31,6 +31,11 @@ code {
 	width: 100%;
 }
 
+
+.code-print code {
+	font-size: 10px;
+}
+
 ul, ul li ul {
 	margin-top: 0;
 	margin-bottom: 0;
