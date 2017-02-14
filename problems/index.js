@@ -37,6 +37,7 @@ module.exports = [{
     'count-left-nodes',
     'invert-binary-tree',
     'level-order-traversal',
+    'path-sum',
     'print-paths',
   ]
 }, {
