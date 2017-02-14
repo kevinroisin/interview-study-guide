@@ -8,6 +8,7 @@ module.exports = [{
   name: 'Strings',
   problems: [
     'reverse-a-string',
+    'reverse-vowels-in-string',
     'determine-if-anagram'
   ]
 }, {
