@@ -9,7 +9,8 @@ module.exports = [{
   problems: [
     'reverse-a-string',
     'reverse-vowels-in-string',
-    'determine-if-anagram'
+    'determine-if-anagram',
+    'permutation'
   ]
 }, {
   name: 'Arrays',
