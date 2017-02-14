@@ -14,7 +14,7 @@ Given a [binary tree](https://en.wikipedia.org/wiki/Binary_tree), write a method
 ### Solution
 ```java
 public void invertTree(TreeNode root) {
-    if(root == null) return null;
+    if(root == null) return;
     
     TreeNode tmp = root.left;
     root.left = root.right;
