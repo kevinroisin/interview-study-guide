@@ -17,7 +17,8 @@ module.exports = [{
     '2-sum',
     'find-mode',
     'determine-if-rotated',
-    'find-x-prime-numbers'
+    'find-x-prime-numbers',
+    'sorted-array-to-bst'
   ]
 }, {
   name: 'Linked Lists',
