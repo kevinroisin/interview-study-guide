@@ -30,7 +30,6 @@ public static LinkedList<Node> pathSum(Node root, int x) {
 
 private static boolean pathSumHelper(Node root, int x, LinkedList<Node> path, int sumSoFar) {
     
-    // base case
     if(root == null) return false;
     
     // add current node to the path

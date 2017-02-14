@@ -19,11 +19,11 @@ public String reverseIterative(String str) {
 ### Recursive Solution
 ```java
 public void reverseRecursive(String str) {
-        // base case to handle empty string and 1 char string
-        if (str.length() < 2) {
-            return str;
-        }
-
-        return reverseRecursive(str.substring(1) + str.charAt(0));
+    // base case to handle empty string and 1 char string
+    if (str.length() < 2) {
+        return str;
     }
+
+    return reverseRecursive(str.substring(1) + str.charAt(0));
+}
 ```

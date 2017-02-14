@@ -24,14 +24,13 @@ public void printBinaryform(int num) {
 ### Recursive Solution
 ```java
 public void printBinaryform(int number) {
-        // base case
-        if (number <= 1) {
-            System.out.print(number);
-            return;
-        }
-
-        int remainder = number % 2; 
-        printBinaryform(number >> 1);
-        System.out.print(remainder);
+    if (number <= 1) {
+        System.out.print(number);
+        return;
     }
+
+    int remainder = number % 2; 
+    printBinaryform(number >> 1);
+    System.out.print(remainder);
+}
 ```

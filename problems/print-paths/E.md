@@ -30,7 +30,6 @@ public static void printPaths(Node root) {
 
 private static void printPathsHelper(Node root, LinkedList<Node> path) {
     
-    // base case
     if(root == null) return;
     
     // add current node to the path
