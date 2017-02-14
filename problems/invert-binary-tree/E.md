@@ -1,6 +1,6 @@
 ## Invert a Binary Tree
 
-Given a[binary tree](https://en.wikipedia.org/wiki/Binary_tree), write a method `invertTree(Node root)` which inverts the tree at each level.
+Given a [binary tree](https://en.wikipedia.org/wiki/Binary_tree), write a method `invertTree(Node root)` which inverts the tree at each level.
 
 ### Example
 ```
