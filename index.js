@@ -22,6 +22,7 @@ marked.setOptions({
 });
 
 let menu = require('./problems');
+menu.count = countTotalProblems(menu);
 menu.Case = Case;
 
 app.get('/', async (req, res) => {
@@ -82,6 +83,10 @@ function loadFiles(problemPaths, callback) {
   }, function(err, problems) {
     callback(problems);
   });
+}
+
+function countTotalProblems(problemsByCategory) {
+  return _.reduce(_.map(problemsByCategory, (category) => { return category.problems.length }), (sum, n) => { return sum + n }, 0);
 }
 
 app.listen(process.argv[2] || 3000, () => {
