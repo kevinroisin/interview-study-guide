@@ -36,7 +36,8 @@ module.exports = [{
     'count-leaf-nodes',
     'count-left-nodes',
     'invert-binary-tree',
-    'level-order-traversal'
+    'level-order-traversal',
+    'print-paths',
   ]
 }, {
   name: 'Sorting',
