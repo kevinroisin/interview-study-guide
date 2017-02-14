@@ -24,8 +24,8 @@ module.exports = [{
   name: 'Linked Lists',
   problems: [
     'add-two-lists',
-    'is-a-palindrome'
-    'reverse-linked-list',
+    'is-a-palindrome',
+    'reverse-linked-list'
   ]
 }, {
   name: 'Trees',
