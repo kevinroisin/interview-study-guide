@@ -29,12 +29,14 @@ module.exports = [{
 }, {
   name: 'Trees',
   problems: [
-    'level-order-traversal',
-    'invert-binary-tree',
     'bst-delete-node',
     'bst-kth-smallest',
     'bst-convert-to-dll',
-    'bst-determine-if-valid'
+    'bst-determine-if-valid',
+    'count-leaf-nodes',
+    'count-left-nodes',
+    'invert-binary-tree',
+    'level-order-traversal'
   ]
 }, {
   name: 'Sorting',
