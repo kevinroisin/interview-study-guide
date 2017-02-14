@@ -25,6 +25,7 @@ module.exports = [{
   name: 'Linked Lists',
   problems: [
     'add-two-lists',
+    'detect-cycle-start',
     'is-a-palindrome',
     'reverse-linked-list'
   ]
