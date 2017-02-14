@@ -28,6 +28,7 @@ module.exports = [{
   name: 'Trees',
   problems: [
     'level-order-traversal',
+    'invert-binary-tree',
     'bst-delete-node',
     'bst-kth-smallest',
     'bst-convert-to-dll',
