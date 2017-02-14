@@ -4,6 +4,12 @@ module.exports = [{
     'convert-integer-to-binary'
   ]
 }, {
+  name: 'Strings',
+  problems: [
+    'reverse-a-string',
+    'determine-if-anagram'
+  ]
+}, {
   name: 'Arrays',
   problems: [
     '2-sum',
