@@ -31,6 +31,15 @@ code {
 	width: 100%;
 }
 
+ul, ul li ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+li {
+	margin: 0;
+}
+
 @media print {    
     .no-print, .no-print * {
         display: none !important;
