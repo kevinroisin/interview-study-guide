@@ -2,6 +2,8 @@
 
 Given a [Linked List](https://en.wikipedia.org/wiki/Linked_list), write a method to detect if there is a cycle in the list. If there is a cycle, return the node at the start of the cycle.
 
+### Solution
+
 ```java
 public ListNode findCycleStart(ListNode head) {
     ListNode slow = head;

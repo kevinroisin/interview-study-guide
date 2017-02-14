@@ -4,6 +4,8 @@ Write a method `String reverseVowels(String s)` to reverse all the vowels in a s
 
 Example: given `kevin`, the method should return `kiven`.
 
+### Solution
+
 ```java
 public String reverseVowels(String s) {
    char[] c = s.toCharArray();

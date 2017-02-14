@@ -12,6 +12,8 @@ cab
 cba
 ```
 
+### Solution
+
 ```java
 public static permutate(String word) {
     permutate("", permutation);

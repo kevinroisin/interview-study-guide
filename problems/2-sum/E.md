@@ -4,6 +4,8 @@ Given an array of unsorted integers and a target integer `x`, write a method `in
 
 Example: given `x = 10` and `int[] a = [9,2,1,4,7]`, your function should return `[0,2]` in any order. If no such combination exists that sum to `x`, your method return `[-1,-1]`.
 
+### Solution
+
 ```java
 public int[] twoSum(int[] nums, int target) {
     
