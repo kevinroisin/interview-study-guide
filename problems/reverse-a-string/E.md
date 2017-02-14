@@ -12,7 +12,7 @@ public String reverseIterative(String str) {
         strBuilder.append(strChars[i]);
     }
 
-    retrun strBuilder.toString();
+    return strBuilder.toString();
 }
 ```
 
