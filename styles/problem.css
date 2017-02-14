@@ -45,6 +45,10 @@ li {
 	margin: 0;
 }
 
+input {
+	margin: 0;
+}
+
 @media print {    
     .no-print, .no-print * {
         display: none !important;
