@@ -1,6 +1,7 @@
 module.exports = [{
   name: 'General',
   problems: [
+    'java-data-structures',
     'convert-integer-to-binary'
   ]
 }, {
