@@ -2,6 +2,7 @@ module.exports = [{
   name: 'General',
   problems: [
     'java-data-structures',
+    'big-o',
     'convert-integer-to-binary'
   ]
 }, {
@@ -10,7 +11,8 @@ module.exports = [{
     'reverse-a-string',
     'reverse-vowels-in-string',
     'determine-if-anagram',
-    'permutation'
+    'permutation',
+    'longest-substring-no-repeats'
   ]
 }, {
   name: 'Arrays',
