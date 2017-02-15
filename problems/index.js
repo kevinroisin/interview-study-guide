@@ -3,7 +3,8 @@ module.exports = [{
   problems: [
     'java-data-structures',
     'big-o',
-    'convert-integer-to-binary'
+    'convert-integer-to-binary',
+    'fibonacci'
   ]
 }, {
   name: 'Strings',
