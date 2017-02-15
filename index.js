@@ -86,7 +86,7 @@ function loadFiles(problemPaths, callback) {
 }
 
 function countTotalProblems(problemsByCategory) {
-  return _.reduce(_.map(problemsByCategory, (category) => { return category.problems.length }), (sum, n) => { return sum + n }, 0);
+  return _.reduce(problemsByCategory, (sum, category) => sum + category.problems.length, 0);
 }
 
 app.listen(process.argv[2] || 3000, () => {
