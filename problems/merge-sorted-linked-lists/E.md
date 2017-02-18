@@ -51,3 +51,4 @@ public Node mergeLists(Node list1, Node list2) {
 
     return resulthead;
 }
+```
