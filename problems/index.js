@@ -30,7 +30,8 @@ module.exports = [{
     'add-two-lists',
     'detect-cycle-start',
     'is-a-palindrome',
-    'reverse-linked-list'
+    'reverse-linked-list',
+    'merge-sorted-linked-lists'
   ]
 }, {
   name: 'Trees',
