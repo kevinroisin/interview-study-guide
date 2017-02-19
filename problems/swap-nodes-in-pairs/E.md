@@ -1,5 +1,5 @@
 ## Swap Nodes in Pairs
-Given a singly linked list, swap nodes in pairs
+Given a singly linked list, swap nodes in pairs.
 
 Example:
 Given `(1) -> (2) -> (3) -> (4) -> (5)`, return `(2) -> (1) -> (4) -> (3) -> (5)`
