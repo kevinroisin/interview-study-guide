@@ -3,9 +3,7 @@
 Given an array of singly [Linked Lists](https://en.wikipedia.org/wiki/Linked_list), write a function to merge them and return the head of the merged list.
 
 Example:
-```
-[(1) -> (5), (2) -> (7), (4)] -> (1) -> (2) -> (4) -> (5) -> (7)
-```
+Given `[(1) -> (5), (2) -> (7), (4)]`, your function should return `(1) -> (2) -> (4) -> (5) -> (7)`
 
 Note that the solution below is not the most efficient. Using a [priority queue](https://en.wikipedia.org/wiki/Priority_queue) or a [divide and conquer](https://en.wikipedia.org/wiki/Divide_and_conquer) approach would give a faster solution.
 
