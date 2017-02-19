@@ -32,6 +32,7 @@ module.exports = [{
     'is-a-palindrome',
     'reverse-linked-list',
     'merge-sorted-linked-lists',
+    'merge-k-sorted-linked-lists',
     'swap-nodes-in-pairs'
   ]
 }, {
