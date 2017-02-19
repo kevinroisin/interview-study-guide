@@ -31,7 +31,8 @@ module.exports = [{
     'detect-cycle-start',
     'is-a-palindrome',
     'reverse-linked-list',
-    'merge-sorted-linked-lists'
+    'merge-sorted-linked-lists',
+    'swap-in-pairs'
   ]
 }, {
   name: 'Trees',
