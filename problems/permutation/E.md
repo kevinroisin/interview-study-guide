@@ -44,7 +44,22 @@ You now repeat this process, but with "B" at index 0, and then repeat again but 
 
 Just how many permutations are there? For "ABC", there are 6 possible permutations, since permutations are n-factorial. So for "ABC" (length 3), there are `3*2*1=6` permutations. This is because for the first index, you have 3 options, then given you took a letter away for the 0 index, you have 2 letters remaining for the 1 index. Given 2 letters already used, 1 for the 0th index and 1 for 1st index, you have 1 letter remaining for the 2nd index. 
 
-Other phrasing attempt, not using 0 indexed: You have 3 letters to choose from the for the first location, 2 to choose from for the 2nd location, and 1 to choose from for the 3rd location.
+Other phrasing attempt: You have 3 letters to choose from the for the first location, 2 to choose from for the 2nd location, and 1 to choose from for the 3rd location.
+
+Example: 
+```
+// Step 1
+From `ABC`, pick a letter for the first position. From 3 choices, you must choose 1.
+-> `A`, you have `BC` remaining
+
+// Step 2
+From `BC`, pick a letter for the second position. From 2 choices, you must choose 1.
+-> `AB`, you have `C` remaining
+
+// Step 3
+From `C`, pick a letter for the 3rd position. From 1 choice, you must choose 1.
+-> `ABC`, no letters remaining
+```
 
 Worksheet: for "ABC", fill in the missing letters of the 6 possible permutations. 
 ```
