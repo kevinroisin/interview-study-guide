@@ -14,6 +14,8 @@ cba
 
 ### Solution
 
+Short disclaimer, the below algorithm does not have a true O(n!) runtime since we are creating new Strings at each step of the permutation. This was done to keep the code simple so it's easier to understand.
+
 ```java
 public static permutate(String word) {
     permutate("", word);
