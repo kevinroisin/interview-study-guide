@@ -34,7 +34,7 @@ private static void permutate(String permutation, String word) {
 
 ### Explanation
 
-To generate all permutation of "ABC", you must place each letter at index 0, and you must also place the remaining letters in all possible indexes for the remaining indexes.
+To generate all permutations of "ABC", you must place each letter at index 0, and then you must also place the remaining letters in all possible indexes for the remaining indexes.
 
 Concrete example: placing "A" in index 0, you must place "B" and "C" in the 1st and 2nd indexes. Does "B" go in index 1, or does "C"? They both need to. In other words, you must generate all permutations where "A" is at index 0. There are 2 such permuations which have "A" at index 0: "ABC", (where "B" is in index 1 and "C" in index 2) and also "ACB" (where "C" is in index 1 and "B" in index 2). 
 
