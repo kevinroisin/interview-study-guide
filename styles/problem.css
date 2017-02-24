@@ -1,5 +1,4 @@
 #menu {
-	border-right: 3px solid #f4f5f6;
 	height: 100%;
 	margin-left: 20px;
 }
@@ -31,6 +30,9 @@ code {
 	width: 100%;
 }
 
+#explanation {
+	border-left: 3px solid #f4f5f6;
+}
 
 .code-print code {
 	font-size: 10px;
