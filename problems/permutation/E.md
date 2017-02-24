@@ -16,7 +16,7 @@ cba
 
 ```java
 public static permutate(String word) {
-    permutate("", permutation);
+    permutate("", word);
 }
 
 private static void permutate(String permutation, String word) {
