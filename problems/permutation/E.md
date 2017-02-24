@@ -42,7 +42,7 @@ Concrete example: placing "A" in index 0, you must place "B" and "C" in the 1st 
 
 You now repeat this process, but with "B" at index 0, and then repeat again but with "C" at index 0.
 
-Just how many permutations are there? For "ABC", there are 6 possible permutations, since permutations are n-factorial. So for "ABC" (length 3), there are 3*2*1=6 permutations. This is because for the first index, you have 3 options, then given you took a letter away for the 0 index, you have 2 letters remaining for the 1 index. Given 2 letters already used, 1 for the 0th index and 1 for 1st index, you have 1 letter remaining for the 2nd index. 
+Just how many permutations are there? For "ABC", there are 6 possible permutations, since permutations are n-factorial. So for "ABC" (length 3), there are `3*2*1=6` permutations. This is because for the first index, you have 3 options, then given you took a letter away for the 0 index, you have 2 letters remaining for the 1 index. Given 2 letters already used, 1 for the 0th index and 1 for 1st index, you have 1 letter remaining for the 2nd index. 
 
 Other phrasing attempt, not using 0 indexed: You have 3 letters to choose from the for the first location, 2 to choose from for the 2nd location, and 1 to choose from for the 3rd location.
 
