@@ -1,5 +1,11 @@
 ## Quicksort
 
+Average: O(nlogn)
+
+Worst case: O(n^2)
+
+Space complexity: O(1) <-- In-place sort
+
 ```java
 public static void sort(int[] a, int low, int high) {
     if(low >= high) return;
