@@ -1,5 +1,11 @@
 ## Mergesort
 
+Average: O(nlogn)
+
+Worst case: O(nlogn)
+
+Space complexity: O(n)
+
 ```java
 public static void sort(int[] a, int start, int end) {
     if(start < end) {
