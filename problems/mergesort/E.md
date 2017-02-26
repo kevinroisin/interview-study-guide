@@ -50,7 +50,7 @@ public static void merge(int[] a, int start, int mid, int end) {
         leftIter++;
     }
     
-    // check if the rigth half has leftovers
+    // check if the right half has leftovers
     while(rightIter <= end) {
         a[start] = copy[rightIter];
         start++;
