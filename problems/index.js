@@ -4,7 +4,8 @@ module.exports = [{
     'java-data-structures',
     'big-o',
     'convert-integer-to-binary',
-    'fibonacci'
+    'fibonacci',
+    'lru-cache'
   ]
 }, {
   name: 'Strings',
